@@ -9,5 +9,18 @@ public class Driver {
   System.out.println(a.getBalance());
   //should print 225
   System.out.println(a.deposit(-100));
+  //should print false
+  if(a.withdraw(100)) {
+    System.out.println("withdraw Success");
+  } else {
+    System.out.println("withdraw Failure");
+  }
+  // should print Success
+  if(a.withdraw(1000)) {
+    System.out.println("withdraw Success");
+  } else {
+    System.out.println("withdraw Failure");
+  }
+  // should print Failure
 }
 }
