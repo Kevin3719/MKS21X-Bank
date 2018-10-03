@@ -20,4 +20,11 @@ public class BankAccount {
   public String toString() {
     return accountID + "      " + balance;
   }
+  public boolean deposit(double money) {
+    if (money >= 0) {
+      balance += money;
+      return true;
+    }
+    return false;
+  }
 }
